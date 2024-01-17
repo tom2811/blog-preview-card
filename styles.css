@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+:root {
+    --primary-Yellow: hsl(47, 88%, 63%);
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-Grey: hsl(0, 0%, 50%);
+    --neutral-Black: hsl(0, 0%, 7%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Figtree', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--primary-Yellow);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: var(--neutral-White);
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px 17px;
+    box-shadow: 6px 6px;
+}
+
+.card-img {
+    width: 265px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: var(--neutral-Black);
+    background-color: var(--primary-Yellow);
+    font-weight: 800;
+    font-size: 0.8rem;
+    display: inline;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+p.publish {
+    margin-top: 13px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+h1 {
+    font-size: 1.17rem;
+    font-weight: 800;
+}
+
+h1:hover {
+    color: var(--primary-Yellow);
+    cursor: pointer;
+}
+
+p.text {
+    color: var(--neutral-Grey);
+    font-weight: 600;
+    font-size: 0.75rem;
+    margin-top: 13px;
+    margin-bottom: 5px;
+    letter-spacing: 0.15px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 30px;
+    margin: 13px 10px 0 0;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 0.7rem;
+    margin-top: 13px;
+}
+
+@media screen and (max-width: 375px) {
+    p.text {
+        font-size: 0.79rem;
+    }
+}
